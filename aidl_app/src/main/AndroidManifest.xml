@@ -19,7 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".hmisetting.VoiceAssistSettingService"
+        <service
+            android:name=".hmisetting.VoiceAssistSettingService"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
