@@ -71,7 +71,7 @@ public class VoiceAssistServiceManager {
                 }
                 // 在创建ServiceConnection的匿名类中的onServiceConnected方法中
                 // 设置死亡代理
-//                mIVoiceAssistInterface.asBinder().unlinkToDeath(mDeathRecipient, 0);
+                mIVoiceAssistInterface.asBinder().unlinkToDeath(mDeathRecipient, 0);
                 mIVoiceAssistInterface = null;
                 Log.d("VoiceAssistServiceManagerService", "VoiceAssistServiceManager onServiceDisconnected  设置死亡代理" );
                 //这里重新绑定服务
